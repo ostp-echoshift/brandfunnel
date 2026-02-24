@@ -125,6 +125,14 @@ body {
     font-size: 1.3rem;
 }
 
+.logo-brand {
+    height: 45px;
+    width: auto;
+    max-width: 220px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
 .highlight {
     color: var(--primary);
 }
@@ -1144,5 +1152,13 @@ body {
     
     .stat-number {
         font-size: 1.8rem;
+    }
+}
+
+/* Para móviles */
+@media (max-width: 768px) {
+    .logo-brand {
+        height: 35px;
+        max-width: 160px;
     }
 }
