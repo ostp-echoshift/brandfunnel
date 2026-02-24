@@ -1067,6 +1067,7 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* Menú móvil */
     .nav-menu {
         display: none;
         position: absolute;
@@ -1094,6 +1095,7 @@ body {
         display: block;
     }
     
+    /* Hero */
     .hero-cta {
         flex-direction: column;
     }
@@ -1106,6 +1108,7 @@ body {
         font-size: 2rem;
     }
     
+    /* Grids a 1 columna */
     .servicios-grid {
         grid-template-columns: 1fr;
     }
@@ -1118,6 +1121,7 @@ body {
         grid-template-columns: 1fr;
     }
     
+    /* Footer */
     .footer-main {
         grid-template-columns: 1fr;
     }
@@ -1136,8 +1140,15 @@ body {
         justify-content: center;
     }
     
+    /* Formulario */
     .captura-container {
         padding: 30px 20px;
+    }
+    
+    /* Logo */
+    .logo-brand {
+        height: 35px;
+        max-width: 160px;
     }
 }
 
@@ -1152,13 +1163,5 @@ body {
     
     .stat-number {
         font-size: 1.8rem;
-    }
-}
-
-/* Para móviles */
-@media (max-width: 768px) {
-    .logo-brand {
-        height: 35px;
-        max-width: 160px;
     }
 }
