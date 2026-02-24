@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandFunnel</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icon/favicon-96x96.png">
+    <link rel="apple-touch-icon" href="assets/icon/favicon.png">
+    <!-- <link rel="manifest" href="assets/icon/site.webmanifest"> -->
+    <meta name="msapplication-TileImage" content="assets/icon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#00f0ff">
+    <meta name="theme-color" content="#00f0ff">
+
+    <style>
+        /* ── Integración imágenes hero-section, confianza, background-abstracto ── */
+
+        /* hero-section.png como imagen visual a la derecha del hero */
+        .hero-image {
+            margin-top: 2.5rem;
+            display: flex;
+            justify-content: center;
+        }
+        .hero-image img {
+            max-width: 680px;
+            width: 100%;
+            border-radius: 1.25rem;
+            box-shadow: 0 24px 64px rgba(0, 240, 255, 0.15);
+            object-fit: cover;
+        }
+
+        /* confianza.png como imagen ilustrativa en sección clientes */
+        .confianza-img-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        .confianza-img-wrap img {
+            max-width: 220px;
+            width: 100%;
+            opacity: 0.85;
+            filter: grayscale(20%);
+        }
+
+        /* background-abstracto.png como fondo de la sección CTA final */
+        .cta-final {
+            background-image: url('assets/img/background-abstracto.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .cta-final::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.62);
+            z-index: 0;
+        }
+        .cta-final .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* testimonios.png como imagen decorativa en sección testimonios */
+        .testimonios-img-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .testimonios-img-wrap img {
+            max-width: 200px;
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 8px 32px rgba(0, 240, 255, 0.18);
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/icon/logo.svg" alt="BrandFunnel" style="height: 40px;" onerror="this.src='assets/img/isotipo.png'">
+                <!-- ELIMINAR el span de texto -->
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="captura.html">Diagnóstico</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="nav-cta">
+                <a href="captura.html" class="btn-primary btn-small">Comenzar</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <span class="badge">🚀 Estrategia + Automatización</span>
+            </div>
+            <h1 class="hero-title">
+                Convierte visitantes en <br>
+                <span class="gradient-text">clientes leales</span>
+            </h1>
+            <p class="hero-subtitle">
+                Diseñamos embudos de venta inteligentes que conectan con tu audiencia,<br>
+                automatizan procesos y multiplican tus resultados.
+            </p>
+            
+            <!-- STATS -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Satisfacción</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">+150</span>
+                    <span class="stat-label">Proyectos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3x</span>
+                    <span class="stat-label">ROI promedio</span>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="hero-cta">
+                <a href="captura.html" class="btn-primary btn-large">
+                    <i class="fas fa-rocket"></i> Diagnóstico gratuito
+                </a>
+                <a href="servicios.html" class="btn-outline btn-large">
+                    <i class="fas fa-eye"></i> Ver servicios
+                </a>
+            </div>
+
+            <!-- ① hero-section.png — imagen visual principal del hero -->
+            <div class="hero-image">
+                <img src="assets/img/hero-section.png" alt="BrandFunnel – Embudos de marca que convierten">
+            </div>
+            
+            <!-- SCROLL INDICATOR -->
+            <div class="scroll-indicator">
+                <span>Descubre más</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTES SECTION -->
+    <section class="clientes-section">
+        <div class="container">
+            <!-- ② confianza.png — icono de credibilidad sobre el bloque de marcas -->
+            <div class="confianza-img-wrap">
+                <img src="assets/img/confianza.png" alt="Confianza y credibilidad">
+            </div>
+            <p class="clientes-title">Confían en nosotros</p>
+            <div class="clientes-grid">
+                <div class="cliente-item">Marca 1</div>
+                <div class="cliente-item">Marca 2</div>
+                <div class="cliente-item">Marca 3</div>
+                <div class="cliente-item">Marca 4</div>
+                <div class="cliente-item">Marca 5</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS DESTACADOS -->
+    <section class="servicios-destacados">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">NUESTROS SERVICIOS</span>
+                <h2 class="section-title">Soluciones <span class="gradient-text">estratégicas</span></h2>
+                <p class="section-subtitle">Diseñamos embudos que no solo venden, construyen marca</p>
+            </div>
+            
+            <div class="servicios-grid">
+                <!-- ③ branding.png -->
+                <div class="servicio-card">
+                    <img src="assets/img/branding.png" alt="Branding Estratégico">
+                    <h3>Branding Estratégico</h3>
+                    <p>Identidad visual, manual de marca y posicionamiento que conecta con tu audiencia.</p>
+                    <a href="servicios.html#branding" class="card-link">Saber más →</a>
+                </div>
+                
+                <!-- ④ embudos-venta.png -->
+                <div class="servicio-card">
+                    <img src="assets/img/embudos-venta.png" alt="Embudos de Venta">
+                    <h3>Embudos de Venta</h3>
+                    <p>Landing pages, funnels y secuencias de conversión optimizadas al máximo.</p>
+                    <a href="servicios.html#embudos" class="card-link">Saber más →</a>
+                </div>
+                
+                <!-- ⑤ automatizacion.png -->
+                <div class="servicio-card">
+                    <img src="assets/img/automatizacion.png" alt="Automatización">
+                    <h3>Automatización</h3>
+                    <p>Workflows, chatbots y secuencias inteligentes que trabajan 24/7.</p>
+                    <a href="servicios.html#automatizacion" class="card-link">Saber más →</a>
+                </div>
+            </div>
+            
+            <div class="servicios-cta">
+                <a href="servicios.html" class="btn-outline">Ver todos los servicios <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="proceso">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">PROCESO</span>
+                <h2 class="section-title">En 4 pasos <span class="gradient-text">transformamos</span> tu negocio</h2>
+            </div>
+            
+            <div class="proceso-grid">
+                <div class="proceso-item">
+                    <div class="proceso-number">01</div>
+                    <h3>Diagnóstico</h3>
+                    <p>Analizamos tu marca, audiencia y objetivos en una sesión estratégica.</p>
+                </div>
+                <div class="proceso-item">
+                    <div class="proceso-number">02</div>
+                    <h3>Estrategia</h3>
+                    <p>Diseñamos el funnel perfecto para tu modelo de negocio.</p>
+                </div>
+                <div class="proceso-item">
+                    <div class="proceso-number">03</div>
+                    <h3>Implementación</h3>
+                    <p>Construimos y automatizamos todo con tecnología de punta.</p>
+                </div>
+                <div class="proceso-item">
+                    <div class="proceso-number">04</div>
+                    <h3>Optimización</h3>
+                    <p>Medimos, ajustamos y escalamos resultados continuamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <!-- ⑥ testimonios.png — imagen decorativa de la sección -->
+                <div class="testimonios-img-wrap">
+                    <img src="assets/img/testimonios.png" alt="Testimonios de clientes">
+                </div>
+                <span class="section-badge">RESULTADOS</span>
+                <h2 class="section-title">Lo que dicen <span class="gradient-text">nuestros clientes</span></h2>
+            </div>
+            
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"BrandFunnel transformó por completo nuestra estrategia digital. Las ventas aumentaron un 200% en 3 meses."</p>
+                    <div class="testimonio-autor">
+                        <strong>Carlos Méndez</strong>
+                        <span>Director de Marketing, TechCorp</span>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"El equipo no solo construye funnels, entienden de negocio. Son nuestros socios estratégicos."</p>
+                    <div class="testimonio-autor">
+                        <strong>Ana López</strong>
+                        <span>Fundadora, Belleza Natural</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Preguntas <span class="gradient-text">frecuentes</span></h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuánto tiempo toma construir un funnel?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Entre 2 y 4 semanas dependiendo de la complejidad del proyecto.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Necesito conocimientos técnicos?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para nada. Nosotros nos encargamos de toda la parte técnica.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cómo miden los resultados?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Implementamos analytics personalizados y reportes mensuales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL — ⑦ background-abstracto.png como fondo vía CSS inline override -->
+    <section id="contacto" class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para <span class="gradient-text">escalar tu negocio</span>?</h2>
+                <p>Agenda tu diagnóstico gratuito y descubre cómo podemos ayudarte.</p>
+                <div class="cta-buttons">
+                    <a href="captura.html" class="btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i> Diagnóstico gratis
+                    </a>
+                    <a href="https://wa.me/523317575573" class="btn-outline btn-large" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo-container">
+                        <!-- ⑧ isotipo.png como fallback del logo SVG -->
+                        <img src="assets/icon/logo.svg" alt="BrandFunnel" class="footer-logo" onerror="this.src='assets/img/isotipo.png'">
+                        <span class="footer-brand-name">Brand<span class="highlight">Funnel</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Embudos de marca que conectan, convierten y construyen lealtad.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="servicios.html"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+                        <li><a href="captura.html"><i class="fas fa-chevron-right"></i> Diagnóstico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicios.html#branding"><i class="fas fa-chevron-right"></i> Branding</a></li>
+                        <li><a href="servicios.html#embudos"><i class="fas fa-chevron-right"></i> Embudos</a></li>
+                        <li><a href="servicios.html#automatizacion"><i class="fas fa-chevron-right"></i> Automatización</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contacto</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/523317575573">33 1757 5573</a></li>
+                        <li><i class="far fa-envelope"></i><a href="mailto:hola@brandfunnel.com">hola@brandfunnel.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 BrandFunnel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/engine.js"></script>
+</body>
+</html>
+

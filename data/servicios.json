@@ -1,0 +1,191 @@
+{
+  "servicios": [
+    {
+      "id": "branding",
+      "nombre": "Branding Estratégico",
+      "descripcion_corta": "Identidad visual, manual de marca y posicionamiento que conecta con tu audiencia.",
+      "descripcion_larga": "Construimos la identidad de tu marca desde cero o potenciamos la que ya tienes. No es solo un logo bonito, es una estrategia visual que conecta con tu audiencia y comunica tus valores en cada punto de contacto.",
+      "precio": 8500,
+      "precio_formato": "$8,500 MXN",
+      "duracion": "2-3 semanas",
+      "icono": "fa-paint-brush",
+      "imagen": "/assets/img/branding.png",
+      "badges": ["Identidad", "Posicionamiento", "Manual de marca"],
+      "caracteristicas": [
+        "Investigación de mercado y competencia",
+        "Desarrollo de naming y tagline",
+        "Diseño de logotipo e isotipo",
+        "Paleta de colores y tipografía",
+        "Manual de identidad corporativa",
+        "Aplicaciones básicas (papelería, digital)"
+      ],
+      "incluye": [
+        "3 propuestas de logo",
+        "2 rondas de revisiones",
+        "Archivos vectoriales (SVG, EPS)",
+        "Archivos para web (PNG, JPG)",
+        "Manual básico en PDF"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué incluye exactamente el branding?",
+          "respuesta": "Incluye investigación, naming, diseño de logo, paleta de colores, tipografía y manual básico. Todo lo necesario para que tu marca tenga una identidad sólida."
+        },
+        {
+          "pregunta": "¿Puedo solo el logo sin el manual?",
+          "respuesta": "Sí, puedes contratar el servicio de logo por separado. Contáctanos para más información."
+        }
+      ]
+    },
+    {
+      "id": "embudos",
+      "nombre": "Embudos de Venta",
+      "descripcion_corta": "Landing pages, funnels y secuencias de conversión optimizadas al máximo.",
+      "descripcion_larga": "Diseñamos y construimos embudos de conversión optimizados para vender más. Desde landing pages que convierten hasta secuencias completas de venta con upsells, downsells y carritos abandonados.",
+      "precio": 12000,
+      "precio_formato": "$12,000 MXN",
+      "duracion": "3-4 semanas",
+      "icono": "fa-funnel-dollar",
+      "imagen": "/assets/img/embudos-venta.png",
+      "badges": ["Landing pages", "Funnels", "Checkout"],
+      "caracteristicas": [
+        "Landing pages de alto impacto",
+        "Embudos de venta completos",
+        "Páginas de venta (VSL / texto)",
+        "Checkout optimizado 1-click",
+        "Upsells / Downsells / Order bumps",
+        "Recuperación de carritos abandonados",
+        "A/B testing incluido"
+      ],
+      "incluye": [
+        "Hasta 5 páginas por embudo",
+        "Integración con email marketing",
+        "Píxeles de seguimiento",
+        "Optimización para móviles",
+        "Capacitación de uso"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Puedo integrar mi propio dominio?",
+          "respuesta": "Sí, el embudo se publica en tu dominio o en un subdominio que te proporcionamos."
+        },
+        {
+          "pregunta": "¿Funciona con cualquier pasarela de pago?",
+          "respuesta": "Sí, integramos con Stripe, PayPal, MercadoPago y las principales pasarelas."
+        }
+      ]
+    },
+    {
+      "id": "automatizacion",
+      "nombre": "Automatización Inteligente",
+      "descripcion_corta": "Workflows, chatbots y secuencias inteligentes que trabajan 24/7.",
+      "descripcion_larga": "Automatiza tus procesos de marketing y ventas para escalar sin esfuerzo. Conectamos tus herramientas, creamos flujos de trabajo inteligentes y aseguramos que ningún lead se quede sin seguimiento.",
+      "precio": 9500,
+      "precio_formato": "$9,500 MXN",
+      "duracion": "2-3 semanas",
+      "icono": "fa-robot",
+      "imagen": "/assets/img/automatizacion.png",
+      "badges": ["Workflows", "Chatbots", "Email"],
+      "caracteristicas": [
+        "Automatización de email marketing",
+        "Chatbots para WhatsApp / web",
+        "Integración con CRM",
+        "Workflows de nutrición de leads",
+        "Webhooks y automatización entre apps",
+        "Reportes automatizados"
+      ],
+      "incluye": [
+        "Hasta 5 flujos automatizados",
+        "Chatbot básico para WhatsApp",
+        "Integración con 3 herramientas",
+        "Dashboard de monitoreo",
+        "Soporte 1 mes"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué herramientas puedo integrar?",
+          "respuesta": "Integramos con ActiveCampaign, Mailchimp, HubSpot, Google Sheets, y muchas más vía webhook."
+        },
+        {
+          "pregunta": "¿Puedo automatizar respuestas de WhatsApp?",
+          "respuesta": "Sí, incluimos chatbot para WhatsApp Business API con respuestas automáticas a preguntas frecuentes."
+        }
+      ]
+    },
+    {
+      "id": "completo",
+      "nombre": "Paquete Completo",
+      "descripcion_corta": "La solución integral: branding + embudos + automatización.",
+      "descripcion_larga": "La solución integral. Llevamos tu marca desde cero hasta tener un sistema de ventas automatizado que trabaja por ti 24/7. Ideal para negocios que quieren escalar rápido.",
+      "precio": 24500,
+      "precio_formato": "$24,500 MXN",
+      "duracion": "6-8 semanas",
+      "icono": "fa-crown",
+      "imagen": "/assets/img/isotipo.png",
+      "badges": ["Branding", "Embudos", "Automatización"],
+      "popular": true,
+      "caracteristicas": [
+        "Todo lo de Branding Estratégico",
+        "Todo lo de Embudos de Venta",
+        "Todo lo de Automatización Inteligente",
+        "Configuración de analytics y tracking",
+        "Soporte prioritario 3 meses",
+        "Estrategia personalizada",
+        "Reuniones de seguimiento quincenales"
+      ],
+      "incluye": [
+        "Descuento del 15% vs comprar por separado",
+        "Prioridad en desarrollo",
+        "Capacitación extendida",
+        "Materiales extras",
+        "Garantía de satisfacción"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Por qué elegir el paquete completo?",
+          "respuesta": "Porque todo funciona integrado: tu marca, tu embudo y tu automatización trabajan en conjunto para maximizar resultados. Además ahorras tiempo y dinero."
+        },
+        {
+          "pregunta": "¿Puedo personalizar el paquete?",
+          "respuesta": "Sí, el paquete es completamente personalizable. Podemos quitar o agregar componentes según tus necesidades."
+        }
+      ]
+    }
+  ],
+  
+  "categorias": [
+    {
+      "id": "branding",
+      "nombre": "Branding",
+      "icono": "fa-paint-brush",
+      "descripcion": "Identidad y posicionamiento de marca"
+    },
+    {
+      "id": "embudos",
+      "nombre": "Embudos",
+      "icono": "fa-funnel-dollar",
+      "descripcion": "Conversión y ventas"
+    },
+    {
+      "id": "automatizacion",
+      "nombre": "Automatización",
+      "icono": "fa-robot",
+      "descripcion": "Escalabilidad y eficiencia"
+    }
+  ],
+  
+  "moneda": {
+    "codigo": "MXN",
+    "simbolo": "$",
+    "decimales": 0
+  },
+  
+  "notas": [
+    "Los precios incluyen IVA",
+    "Pagos en 3 cuotas sin intereses",
+    "Garantía de satisfacción por 30 días"
+  ],
+  
+  "ultima_actualizacion": "2026-02-24",
+  "version": "1.0.0"
+}

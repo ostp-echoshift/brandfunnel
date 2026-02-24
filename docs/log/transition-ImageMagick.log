@@ -1,0 +1,10 @@
+PS C:\Proyectos\BrandFunnel> winget install ImageMagick.ImageMagick
+Found ImageMagick Q16-HDRI [ImageMagick.ImageMagick] Version 7.1.2.15
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-15/ImageMagick-7.1.2-15-Q16-HDRI-x64-dll.exe
+  ██████████████████████████████  22.9 MB / 22.9 MB
+Successfully verified installer hash
+Starting package install...
+Successfully installed
+PS C:\Proyectos\BrandFunnel>

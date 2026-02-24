@@ -1,0 +1,165 @@
+PS C:\Proyectos\BrandFunnel> .\Generate-Icons.ps1
+🚀 Iniciando generación de activos para BrandFunnel...
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:27
+Line |
+  27 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] apple-icon-57x57.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:27
+Line |
+  27 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] apple-icon-60x60.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:27
+Line |
+  27 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] apple-icon-72x72.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:27
+Line |
+  27 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] apple-icon-76x76.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:27
+Line |
+  27 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] apple-icon-114x114.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:27
+Line |
+  27 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] apple-icon-120x120.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:27
+Line |
+  27 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] apple-icon-144x144.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:27
+Line |
+  27 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] apple-icon-152x152.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:27
+Line |
+  27 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] apple-icon-180x180.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:34
+Line |
+  34 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] android-icon-36x36.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:34
+Line |
+  34 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] android-icon-48x48.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:34
+Line |
+  34 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] android-icon-72x72.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:34
+Line |
+  34 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] android-icon-96x96.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:34
+Line |
+  34 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] android-icon-144x144.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:34
+Line |
+  34 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] android-icon-192x192.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:41
+Line |
+  41 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] ms-icon-70x70.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:41
+Line |
+  41 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] ms-icon-144x144.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:41
+Line |
+  41 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] ms-icon-150x150.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:41
+Line |
+  41 |      magick $sourceFile -resize "$($s)x$($s)" $name
+     |      ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] ms-icon-310x310.png
+magick: C:\Proyectos\BrandFunnel\Generate-Icons.ps1:46
+Line |
+  46 |  magick $sourceFile -define icon:auto-resize=16,32,48 favicon.ico
+     |  ~~~~~~
+     | The term 'magick' is not recognized as a name of a cmdlet, function, script file, or executable program. Check
+     | the spelling of the name, or if a path was included, verify that the path is correct and try again.
+ [OK] favicon.ico (Multi-size)
+
+✅ ¡Todos los iconos generados correctamente!
+PS C:\Proyectos\BrandFunnel\assets\icon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

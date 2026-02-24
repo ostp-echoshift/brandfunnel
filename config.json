@@ -1,0 +1,178 @@
+{
+  "site": {
+    "name": "BrandFunnel",
+    "url": "https://ostp-echoshift.github.io/BrandFunnel/",
+    "environment": "production",
+    "version": "1.0.0"
+  },
+  
+  "brand": {
+    "name": "BrandFunnel",
+    "tagline": "Embudos de marca que conectan, convierten y construyen lealtad",
+    "logo": "/assets/logo/logo.svg",
+    "logoFallback": "/assets/img/isotipo.png",
+    "favicon": "/assets/icon/favicon.ico",
+    "colors": {
+      "primary": "#00f0ff",
+      "secondary": "#7b2eda",
+      "dark": "#0a0c14",
+      "darker": "#05070c",
+      "text": "#e0e5ff",
+      "textMuted": "#8b95b0"
+    }
+  },
+  
+  "contact": {
+    "whatsapp": {
+      "number": "523317575573",
+      "display": "33 1757 5573",
+      "message": "Hola, vengo de BrandFunnel y me interesa..."
+    },
+    "email": {
+      "address": "hola@brandfunnel.com",
+      "display": "hola@brandfunnel.com"
+    },
+    "social": {
+      "instagram": "https://instagram.com/brandfunnel",
+      "linkedin": "https://linkedin.com/company/brandfunnel",
+      "tiktok": "https://tiktok.com/@brandfunnel",
+      "youtube": "https://youtube.com/@brandfunnel"
+    }
+  },
+  
+  "services": [
+    {
+      "id": "branding",
+      "name": "Branding Estratégico",
+      "price": 8500,
+      "currency": "MXN",
+      "duration": "2-3 semanas",
+      "icon": "fa-paint-brush",
+      "image": "/assets/img/branding.png",
+      "features": [
+        "Investigación de mercado",
+        "Naming y tagline",
+        "Diseño de logotipo",
+        "Paleta de colores",
+        "Manual de identidad",
+        "Aplicaciones básicas"
+      ]
+    },
+    {
+      "id": "embudos",
+      "name": "Embudos de Venta",
+      "price": 12000,
+      "currency": "MXN",
+      "duration": "3-4 semanas",
+      "icon": "fa-funnel-dollar",
+      "image": "/assets/img/embudos-venta.png",
+      "features": [
+        "Landing pages",
+        "Embudos completos",
+        "Checkout 1-click",
+        "Upsells/Downsells",
+        "Carritos abandonados",
+        "A/B testing"
+      ]
+    },
+    {
+      "id": "automatizacion",
+      "name": "Automatización Inteligente",
+      "price": 9500,
+      "currency": "MXN",
+      "duration": "2-3 semanas",
+      "icon": "fa-robot",
+      "image": "/assets/img/automatizacion.png",
+      "features": [
+        "Email marketing",
+        "Chatbots WhatsApp/web",
+        "Integración CRM",
+        "Workflows de nutrición",
+        "Webhooks",
+        "Reportes automatizados"
+      ]
+    },
+    {
+      "id": "completo",
+      "name": "Paquete Completo",
+      "price": 24500,
+      "currency": "MXN",
+      "duration": "6-8 semanas",
+      "icon": "fa-crown",
+      "image": "/assets/img/isotipo.png",
+      "popular": true,
+      "features": [
+        "Todo lo de Branding",
+        "Todo lo de Embudos",
+        "Todo lo de Automatización",
+        "Analytics avanzado",
+        "Soporte 3 meses",
+        "Estrategia personalizada"
+      ]
+    }
+  ],
+  
+  "pages": {
+    "home": "/index.html",
+    "services": "/servicios.html",
+    "capture": "/captura.html",
+    "thankyou": "/gracias.html",
+    "error": "/404.html"
+  },
+  
+  "assets": {
+    "css": ["/assets/css/main.css"],
+    "js": [
+      "/assets/js/main.js",
+      "/assets/js/utils.js",
+      "/assets/js/engine.js"
+    ],
+    "images": {
+      "hero": "/assets/img/hero-section.png",
+      "branding": "/assets/img/branding.png",
+      "embudos": "/assets/img/embudos-venta.png",
+      "automatizacion": "/assets/img/automatizacion.png",
+      "isotipo": "/assets/img/isotipo.png",
+      "confianza": "/assets/img/confianza.png",
+      "testimonios": "/assets/img/testimonios.png",
+      "background": "/assets/img/background-abstracto.png"
+    }
+  },
+  
+  "analytics": {
+    "enabled": true,
+    "tracking": {
+      "scroll": true,
+      "clicks": true,
+      "formSubmissions": true
+    }
+  },
+  
+  "ostp": {
+    "version": "1.0",
+    "engine": true,
+    "principles": ["presencia", "resonancia", "permanencia"],
+    "triggers": {
+      "scroll30": "value-block",
+      "scroll50": "social-proof",
+      "scroll70": "cta-block"
+    }
+  },
+  
+  "seo": {
+    "title": "BrandFunnel · Embudos de Marca que Convierten",
+    "description": "Diseñamos embudos de venta inteligentes que conectan con tu audiencia, automatizan procesos y multiplican tus resultados.",
+    "keywords": ["funnel", "branding", "automatización", "marketing", "embudos"],
+    "author": "BrandFunnel · OSTP",
+    "ogImage": "/assets/img/hero-section.png"
+  },
+  
+  "deployment": {
+    "platform": "GitHub Pages",
+    "branch": "main",
+    "repo": "https://github.com/ostp-echoshift/BrandFunnel",
+    "url": "https://ostp-echoshift.github.io/BrandFunnel/"
+  },
+  
+  "_comment": "Configuración general de BrandFunnel v1.0 - 2026-02-24"
+}

@@ -1,0 +1,87 @@
+PS C:\Proyectos\BrandFunnel> dir
+
+    Directory: C:\Proyectos\BrandFunnel
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----      22/feb/2026 01:36 a. m.                assets
+d----      22/feb/2026 01:36 a. m.                components
+d----      24/feb/2026 10:01 a. m.                data
+d----      22/feb/2026 01:38 a. m.                docs
+d----      22/feb/2026 01:35 a. m.                FUNNEL
+d----      22/feb/2026 01:36 a. m.                services
+-a---      24/feb/2026 09:56 a. m.            636 .gitignore
+-a---      24/feb/2026 09:53 a. m.           2197 404.html
+-a---      24/feb/2026 09:53 a. m.           9664 captura.html
+-a---      24/feb/2026 09:57 a. m.           4932 config.json
+-a---      24/feb/2026 10:14 a. m.           9323 fix-imagenes.ps1
+-a---      24/feb/2026 09:58 a. m.           3775 generar-favicons.ps1
+-a---      24/feb/2026 10:14 a. m.           1984 Generate-Icons.ps1
+-a---      24/feb/2026 09:53 a. m.           2399 gracias.html
+-a---      24/feb/2026 09:49 a. m.          14739 index.html
+-a---      24/feb/2026 09:57 a. m.            619 package.json
+-a---      24/feb/2026 09:58 a. m.           2896 project-config.json
+-a---      24/feb/2026 09:57 a. m.           3719 README.md
+-a---      24/feb/2026 09:52 a. m.          19373 servicios.html
+
+PS C:\Proyectos\BrandFunnel> .\fix-imagenes.ps1
+
+==============================================================
+  FIX-IMAGENES  |  BrandFunnel
+==============================================================
+
+[ PASO 1 ] Renombrando archivos de imagen
+--------------------------------------------------
+  OK  AUTOMATIZACIÓN.png  ->  automatizacion.png
+  !!  El destino ya existe, se omite: branding.png
+  !!  El destino ya existe, se omite: confianza.png
+  OK  EMBUDOS DE VENTA.png  ->  embudos-venta.png
+  OK  HERO SECTION.png  ->  hero-section.png
+  !!  El destino ya existe, se omite: isotipo.png
+  !!  El destino ya existe, se omite: testimonios.png
+  OK  BACKGROUND ABSTRACTO.png  ->  background-abstracto.png
+
+[ PASO 2 ] Actualizando referencias en main.css
+--------------------------------------------------
+  OK  main.css actualizado
+
+[ PASO 3 ] Actualizando referencias en archivos HTML
+--------------------------------------------------
+  OK  404.html actualizado
+  --  captura.html: sin referencias que actualizar
+  OK  gracias.html actualizado
+  OK  index.html actualizado
+  OK  servicios.html actualizado
+
+[ PASO 4 ] Actualizando referencias en archivos JSON
+--------------------------------------------------
+  OK  config.json actualizado
+  --  package.json: sin referencias que actualizar
+  OK  project-config.json actualizado
+  OK  servicios.json actualizado
+
+[ PASO 5 ] Estado actual de la carpeta de imágenes
+--------------------------------------------------
+  automatizacion.png
+  background-abstracto.png
+  BRANDING.png
+  CONFIANZA.png
+  embudos-venta.png
+  hero-section.png
+  ISOTIPO.png
+  TESTIMONIOS.png
+
+==============================================================
+  RESUMEN DE EJECUCION
+==============================================================
+  Imagenes renombradas   : 4 de 8
+  Archivos actualizados  : 8
+  Errores encontrados    : 0
+==============================================================
+
+  Todo completado sin errores.
+  Nombres de archivo ahora son: sin espacios, sin tildes, en minusculas.
+
+PS C:\Proyectos\BrandFunnel>
+
+

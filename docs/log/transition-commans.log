@@ -1,0 +1,44 @@
+PS C:\Users\fngtr> cd C:\Proyectos\BrandFunnel
+PS C:\Proyectos\BrandFunnel> git init
+>> git add .
+>> git commit -m "BrandFunnel v1.0 - Estructura inicial"
+Initialized empty Git repository in C:/Proyectos/BrandFunnel/.git/
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '404.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FUNNEL/DirMainRoot.ps1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/components.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/main.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/main.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/utils.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/logo/logo.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'captura.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/parametros.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'gracias.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'servicios.html', LF will be replaced by CRLF the next time Git touches it
+[master (root-commit) 0afd088] BrandFunnel v1.0 - Estructura inicial
+ 21 files changed, 909 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 404.html
+ create mode 100644 FUNNEL/DirMainRoot.ps1
+ create mode 100644 README.md
+ create mode 100644 assets/css/components.css
+ create mode 100644 assets/css/forms.css
+ create mode 100644 assets/css/main.css
+ create mode 100644 assets/icon/favicon.ico
+ create mode 100644 assets/js/engine.js
+ create mode 100644 assets/js/main.js
+ create mode 100644 assets/js/utils.js
+ create mode 100644 assets/logo/logo.svg
+ create mode 100644 block/presecens/hero-block.html
+ create mode 100644 captura.html
+ create mode 100644 config.json
+ create mode 100644 docs/parametros.md
+ create mode 100644 gracias.html
+ create mode 100644 index.html
+ create mode 100644 package.json
+ create mode 100644 project-config.json
+ create mode 100644 servicios.html
+PS C:\Proyectos\BrandFunnel>

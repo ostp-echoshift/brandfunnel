@@ -1,0 +1,71 @@
+{
+    "name": "BrandFunnel · Embudos de Marca que Convierten",
+    "short_name": "BrandFunnel",
+    "description": "Diseñamos embudos de venta inteligentes que conectan con tu audiencia, automatizan procesos y multiplican tus resultados.",
+    "icons": [
+        {
+            "src": "/assets/icon/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/icon/android-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/icon/favicon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#00f0ff",
+    "background_color": "#05070c",
+    "display": "standalone",
+    "display_override": ["standalone", "minimal-ui"],
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "id": "/",
+    "lang": "es-MX",
+    "dir": "ltr",
+    "prefer_related_applications": false,
+    "categories": ["business", "marketing"],
+    "screenshots": [
+        {
+            "src": "/assets/img/hero-section.png",
+            "sizes": "1920x1080",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Vista principal de BrandFunnel"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Diagnóstico gratuito",
+            "short_name": "Diagnóstico",
+            "description": "Solicita tu diagnóstico personalizado",
+            "url": "/captura.html",
+            "icons": [
+                {
+                    "src": "/assets/icon/favicon-32x32.png",
+                    "sizes": "32x32"
+                }
+            ]
+        },
+        {
+            "name": "Ver servicios",
+            "short_name": "Servicios",
+            "description": "Conoce todos nuestros servicios",
+            "url": "/servicios.html",
+            "icons": [
+                {
+                    "src": "/assets/icon/favicon-32x32.png",
+                    "sizes": "32x32"
+                }
+            ]
+        }
+    ]
+}

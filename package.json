@@ -1,0 +1,21 @@
+{
+  "name": "brandfunnel",
+  "version": "1.0.0",
+  "description": "Embudos de marca que conectan, convierten y construyen lealtad",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "start": "live-server --port=3000 --open=index.html"
+  },
+  "keywords": ["funnel", "branding", "automatizacion", "marketing"],
+  "author": "BrandFunnel · OSTP",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ostp-echoshift/BrandFunnel.git"
+  },
+  "homepage": "https://ostp-echoshift.github.io/BrandFunnel/",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

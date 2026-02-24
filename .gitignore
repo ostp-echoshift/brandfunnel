@@ -1,0 +1,53 @@
+# ==============================================
+# BrandFunnel - GitIgnore
+# ==============================================
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Editores
+.vscode/
+.idea/
+*.iml
+*.sublime-*
+
+# Dependencias
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Configuración sensible
+.env
+.env.local
+*.key
+*.pem
+secrets/
+config/credentials.json
+
+# Datos de clientes
+data/leads/
+conversiones/
+*.leads.log
+
+# Respaldos
+*.backup
+*.bak
+*.orig
+backups/
+
+# Archivos locales
+config.local.json
+project-config.local.json
+
+# ===== EXCEPCIONES =====
+!.env.example
+!config.example.json
+!README.md

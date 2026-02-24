@@ -1,0 +1,96 @@
+PS C:\Users\fngtr> cd C:\Proyectos\FUNNEL
+PS C:\Proyectos\FUNNEL> dir
+
+    Directory: C:\Proyectos\FUNNEL
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---      22/feb/2026 01:35 a. m.           9227 DirMainRoot.ps1
+
+PS C:\Proyectos\FUNNEL> .\DirMainRoot.ps1
+🚀 Nombre del nuevo proyecto: BrandFunnel
+╔════════════════════════════════════════════════════════════╗
+║  CONSTRUYENDO ESTRUCTURA BASE PARA: BrandFunnel
+╚════════════════════════════════════════════════════════════╝
+
+✅ Creada carpeta raíz: C:\Proyectos\BrandFunnel
+
+📁 Creando carpetas...
+  ✅ Creada: assets\css
+  ✅ Creada: assets\js
+  ✅ Creada: assets\img
+  ✅ Creada: assets\icon
+  ✅ Creada: assets\logo
+  ✅ Creada: assets\fonts
+  ✅ Creada: components
+  ✅ Creada: data
+  ✅ Creada: docs
+  ✅ Creada: services
+
+📄 Creando archivos base...
+  ✅ Creado: index.html
+  ✅ Creado: servicios.html
+  ✅ Creado: captura.html
+  ✅ Creado: gracias.html
+  ✅ Creado: 404.html
+  ✅ Creado: README.md
+  ✅ Creado: .gitignore
+  ✅ Creado: config.json
+  ✅ Creado: package.json
+  ✅ Creado: assets\css\main.css
+  ✅ Creado: assets\css\components.css
+  ✅ Creado: assets\js\main.js
+  ✅ Creado: assets\js\utils.js
+  ✅ Creado: assets\icon\favicon.ico
+  ✅ Creado: assets\logo\logo.svg
+  ✅ Creado: docs\parametros.md
+  ✅ Creado: project-config.json
+
+📁 ESTRUCTURA GENERADA:
+BrandFunnel/
+├── index.html
+├── servicios.html
+├── captura.html
+├── gracias.html
+├── 404.html
+├── README.md
+├── .gitignore
+├── config.json
+├── package.json
+├── project-config.json
+├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── img/
+│   ├── icon/
+│   ├── logo/
+│   └── fonts/
+├── components/
+├── data/
+├── docs/
+└── services/
+
+╔════════════════════════════════════════════════════════════╗
+║               CONSTRUCCIÓN COMPLETADA                     ║
+╠════════════════════════════════════════════════════════════╣
+║  📁 Proyecto : BrandFunnel
+║  📂 Ruta     : C:\Proyectos\BrandFunnel
+║  📊 Carpetas : 10
+║  📄 Archivos : 17
+╚════════════════════════════════════════════════════════════╝
+
+🚀 LISTO: Primero la casa, luego los muebles.
+📌 Siguiente paso: definir el contenido de cada archivo.
+PS C:\Proyectos\FUNNEL>
+
+
+
+
+
+
+
+
+
+
+
+

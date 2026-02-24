@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+   <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios · BrandFunnel</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icon/favicon-96x96.png">
+    <link rel="apple-touch-icon" href="assets/icon/favicon.png">
+    <!-- <link rel="manifest" href="assets/icon/site.webmanifest"> -->
+    <meta name="msapplication-TileImage" content="assets/icon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#00f0ff">
+    <meta name="theme-color" content="#00f0ff">
+    
+    <style>
+        .services-hero {
+            background: linear-gradient(135deg, rgba(0,240,255,0.1), rgba(123,46,218,0.1));
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        
+        .service-full-card {
+            background: rgba(10,15,30,0.5);
+            border: 1px solid rgba(0,240,255,0.2);
+            border-radius: 30px;
+            padding: 40px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .service-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        /* ── service-icon-large ahora aloja imagen real ── */
+        .service-icon-large {
+            width: 100px;
+            height: 100px;
+            background: rgba(0,240,255,0.1);
+            border: 2px solid var(--primary);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .service-icon-large img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 28px;
+        }
+        
+        .service-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-muted);
+        }
+        
+        .feature-item i {
+            color: var(--primary);
+        }
+        
+        .service-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 20px 0;
+        }
+        
+        .service-price small {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+        
+        .service-cta {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .badge-service {
+            display: inline-block;
+            padding: 5px 15px;
+            background: rgba(0,240,255,0.1);
+            border: 1px solid var(--primary);
+            border-radius: 30px;
+            font-size: 0.8rem;
+            color: var(--primary);
+            margin-right: 10px;
+        }
+
+        /* ── background-abstracto.png en CTA final ── */
+        .cta-final {
+            background-image: url('assets/img/background-abstracto.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .cta-final::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.62);
+            z-index: 0;
+        }
+        .cta-final .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .service-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .service-features {
+                grid-template-columns: 1fr;
+            }
+            .service-cta {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/icon/logo.svg" alt="BrandFunnel" style="height: 40px;" onerror="this.src='assets/img/isotipo.png'">
+                <span class="logo-text">Brand<span class="highlight">Funnel</span></span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html" class="active">Servicios</a>
+                <a href="captura.html">Diagnóstico</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="nav-cta">
+                <a href="captura.html" class="btn-primary btn-small">Comenzar</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SERVICIOS -->
+    <section class="services-hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Soluciones <span class="gradient-text">estratégicas</span>
+            </h1>
+            <p class="hero-subtitle">
+                Diseñamos embudos que conectan, convierten y construyen marca
+            </p>
+        </div>
+    </section>
+
+    <!-- LISTA DE SERVICIOS -->
+    <section class="services-list">
+        <div class="container">
+            
+            <!-- SERVICIO 1: BRANDING — branding.png -->
+            <div id="branding" class="service-full-card">
+                <div class="service-header">
+                    <div class="service-icon-large">
+                        <img src="assets/img/branding.png" alt="Branding Estratégico">
+                    </div>
+                    <div>
+                        <h2>Branding <span class="gradient-text">Estratégico</span></h2>
+                        <div>
+                            <span class="badge-service">Identidad</span>
+                            <span class="badge-service">Posicionamiento</span>
+                            <span class="badge-service">Manual de marca</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="service-description">
+                    Construimos la identidad de tu marca desde cero o potenciamos la que ya tienes. 
+                    No es solo un logo bonito, es una estrategia visual que conecta con tu audiencia 
+                    y comunica tus valores en cada punto de contacto.
+                </p>
+                
+                <div class="service-features">
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Investigación de mercado</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Naming y tagline</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Diseño de logotipo</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Paleta de colores</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Manual de identidad</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Aplicaciones básicas</span></div>
+                </div>
+                
+                <div class="service-price">
+                    $8,500 <small>MXN</small>
+                </div>
+                
+                <div class="service-cta">
+                    <a href="captura.html?servicio=branding" class="btn-primary">Solicitar diagnóstico</a>
+                    <a href="#faq-branding" class="btn-outline">Ver preguntas frecuentes</a>
+                </div>
+            </div>
+            
+            <!-- SERVICIO 2: EMBUDOS — embudos-venta.png -->
+            <div id="embudos" class="service-full-card">
+                <div class="service-header">
+                    <div class="service-icon-large">
+                        <img src="assets/img/embudos-venta.png" alt="Embudos de Venta">
+                    </div>
+                    <div>
+                        <h2>Embudos de <span class="gradient-text">Venta</span></h2>
+                        <div>
+                            <span class="badge-service">Landing pages</span>
+                            <span class="badge-service">Funnels</span>
+                            <span class="badge-service">Checkout</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="service-description">
+                    Diseñamos y construimos embudos de conversión optimizados para vender más. 
+                    Desde landing pages que convierten hasta secuencias completas de venta 
+                    con upsells, downsells y carritos abandonados.
+                </p>
+                
+                <div class="service-features">
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Landing pages de alto impacto</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Embudos completos</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Checkout 1-click</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Upsells / Downsells</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Carritos abandonados</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>A/B testing</span></div>
+                </div>
+                
+                <div class="service-price">
+                    $12,000 <small>MXN</small>
+                </div>
+                
+                <div class="service-cta">
+                    <a href="captura.html?servicio=embudos" class="btn-primary">Solicitar diagnóstico</a>
+                    <a href="#faq-embudos" class="btn-outline">Ver preguntas frecuentes</a>
+                </div>
+            </div>
+            
+            <!-- SERVICIO 3: AUTOMATIZACIÓN — automatizacion.png -->
+            <div id="automatizacion" class="service-full-card">
+                <div class="service-header">
+                    <div class="service-icon-large">
+                        <img src="assets/img/automatizacion.png" alt="Automatización Inteligente">
+                    </div>
+                    <div>
+                        <h2>Automatización <span class="gradient-text">Inteligente</span></h2>
+                        <div>
+                            <span class="badge-service">Workflows</span>
+                            <span class="badge-service">Chatbots</span>
+                            <span class="badge-service">Email</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="service-description">
+                    Automatiza tus procesos de marketing y ventas para escalar sin esfuerzo. 
+                    Conectamos tus herramientas, creamos flujos de trabajo inteligentes y 
+                    aseguramos que ningún lead se quede sin seguimiento.
+                </p>
+                
+                <div class="service-features">
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Email marketing</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Chatbots WhatsApp/web</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Integración CRM</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Workflows de nutrición</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Webhooks</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Reportes automatizados</span></div>
+                </div>
+                
+                <div class="service-price">
+                    $9,500 <small>MXN</small>
+                </div>
+                
+                <div class="service-cta">
+                    <a href="captura.html?servicio=automatizacion" class="btn-primary">Solicitar diagnóstico</a>
+                    <a href="#faq-automatizacion" class="btn-outline">Ver preguntas frecuentes</a>
+                </div>
+            </div>
+            
+            <!-- PAQUETE COMPLETO — ícono corona (sin imagen específica disponible) -->
+            <div class="service-full-card" style="border: 2px solid var(--primary);">
+                <div style="position: relative; top: -20px; text-align: center;">
+                    <span style="background: var(--gradient); color: white; padding: 5px 20px; border-radius: 30px; font-weight: 600;">MÁS POPULAR</span>
+                </div>
+                <div class="service-header">
+                    <div class="service-icon-large">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div>
+                        <h2>Paquete <span class="gradient-text">Completo</span></h2>
+                        <div>
+                            <span class="badge-service">Branding</span>
+                            <span class="badge-service">Embudos</span>
+                            <span class="badge-service">Automatización</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="service-description">
+                    La solución integral. Llevamos tu marca desde cero hasta tener un sistema de ventas 
+                    automatizado que trabaja por ti 24/7. Ideal para negocios que quieren escalar rápido.
+                </p>
+                
+                <div class="service-features">
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Todo lo de Branding</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Todo lo de Embudos</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Todo lo de Automatización</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Analytics avanzado</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Soporte 3 meses</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Estrategia personalizada</span></div>
+                </div>
+                
+                <div class="service-price">
+                    $24,500 <small>MXN</small>
+                </div>
+                
+                <div class="service-cta">
+                    <a href="captura.html?servicio=completo" class="btn-primary">Solicitar diagnóstico</a>
+                    <a href="#faq-completo" class="btn-outline">Ver preguntas frecuentes</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ SERVICIOS -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Preguntas <span class="gradient-text">frecuentes</span></h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Puedo contratar servicios por separado?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, cada servicio se puede contratar de manera independiente.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuánto tiempo toma cada servicio?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Branding: 2-3 semanas | Embudos: 3-4 semanas | Automatización: 2-3 semanas</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Los precios incluyen IVA?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, todos los precios mostrados ya incluyen IVA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL — background-abstracto.png como fondo -->
+    <section id="contacto" class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para <span class="gradient-text">comenzar</span>?</h2>
+                <p>Solicita tu diagnóstico gratuito</p>
+                <div class="cta-buttons">
+                    <a href="captura.html" class="btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i> Diagnóstico gratis
+                    </a>
+                    <a href="https://wa.me/523317575573" class="btn-outline btn-large" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo-container">
+                        <!-- isotipo.png como fallback -->
+                        <img src="assets/icon/logo.svg" alt="BrandFunnel" class="footer-logo" onerror="this.src='assets/img/isotipo.png'">
+                        <span class="footer-brand-name">Brand<span class="highlight">Funnel</span></span>
+                    </div>
+                    <p class="footer-description">Embudos de marca que conectan, convierten y construyen lealtad.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="servicios.html"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+                        <li><a href="captura.html"><i class="fas fa-chevron-right"></i> Diagnóstico</a></li>
+                    </ul>
+                </div>
+                <!-- Columna Servicios añadida para consistencia con index.html -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="servicios.html#branding"><i class="fas fa-chevron-right"></i> Branding</a></li>
+                        <li><a href="servicios.html#embudos"><i class="fas fa-chevron-right"></i> Embudos</a></li>
+                        <li><a href="servicios.html#automatizacion"><i class="fas fa-chevron-right"></i> Automatización</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contacto</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/523317575573">33 1757 5573</a></li>
+                        <li><i class="far fa-envelope"></i><a href="mailto:hola@brandfunnel.com">hola@brandfunnel.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 BrandFunnel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/utils.js"></script>
+</body>
+</html>
+

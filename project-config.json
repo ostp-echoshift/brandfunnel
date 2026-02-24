@@ -1,0 +1,120 @@
+  {
+    "project": {
+      "name": "BrandFunnel",
+      "version": "1.0.0",
+      "description": "Embudos de marca que conectan, convierten y construyen lealtad",
+      "created": "2026-02-24",
+      "lastUpdate": "2026-02-24",
+      "author": "OSTP · echoshift",
+      "repository": "https://github.com/ostp-echoshift/BrandFunnel",
+      "url": "https://ostp-echoshift.github.io/BrandFunnel/"
+    },
+    
+    "structure": {
+      "root": [
+        "index.html",
+        "servicios.html",
+        "captura.html",
+        "gracias.html",
+        "404.html",
+        "README.md",
+        ".gitignore",
+        "package.json",
+        "config.json",
+        "project-config.json"
+      ],
+      "folders": [
+        "assets/css",
+        "assets/js",
+        "assets/img",
+        "assets/icon",
+        "assets/logo",
+        "docs",
+        "block"
+      ]
+    },
+    
+    "files": {
+      "html": 5,
+      "css": 1,
+      "js": 3,
+      "images": 8,
+      "icons": 9,
+      "total": 26
+    },
+    
+    "brand": {
+      "name": "BrandFunnel",
+      "tagline": "Embudos de marca que conectan, convierten y construyen lealtad",
+      "colors": {
+        "primary": "#00f0ff",
+        "secondary": "#7b2eda",
+        "dark": "#0a0c14",
+        "darker": "#05070c",
+        "text": "#e0e5ff",
+        "textMuted": "#8b95b0"
+      },
+      "logo": {
+        "svg": "assets/logo/logo.svg",
+        "png": "assets/img/isotipo.png"
+      }
+    },
+    
+    "services": [
+      {
+        "id": "branding",
+        "name": "Branding Estratégico",
+        "price": 8500,
+        "currency": "MXN"
+      },
+      {
+        "id": "embudos",
+        "name": "Embudos de Venta",
+        "price": 12000,
+        "currency": "MXN"
+      },
+      {
+        "id": "automatizacion",
+        "name": "Automatización Inteligente",
+        "price": 9500,
+        "currency": "MXN"
+      },
+      {
+        "id": "completo",
+        "name": "Paquete Completo",
+        "price": 24500,
+        "currency": "MXN",
+        "popular": true
+      }
+    ],
+    
+    "contact": {
+      "whatsapp": "523317575573",
+      "email": "hola@brandfunnel.com"
+    },
+    
+    "deployment": {
+      "platform": "GitHub Pages",
+      "branch": "main",
+      "url": "https://ostp-echoshift.github.io/BrandFunnel/"
+    },
+    
+    "status": {
+      "estructura": "✅ completa",
+      "html": "✅ listos",
+      "css": "✅ unificado",
+      "js": "✅ 3 archivos",
+      "imagenes": "✅ 8 archivos",
+      "iconos": "✅ 9 archivos",
+      "git": "✅ inicializado",
+      "github": "✅ conectado"
+    },
+    
+    "notes": [
+      "CSS unificado en main.css",
+      "Logo SVG con fallback a PNG",
+      "Formulario envía a WhatsApp",
+      "Favicons completos (9 tamaños)",
+      "OSTP engine integrado"
+    ]
+  }

@@ -1,0 +1,23 @@
+PS C:\Proyectos\BrandFunnel> .\generar-favicons.ps1
+🚀 Generando archivos de iconos...
+  ✅ Creado: favicon-16x16.png
+  ✅ Creado: favicon-32x32.png
+  ✅ Creado: favicon-96x96.png
+  ✅ Creado: apple-icon-57x57.png
+  ✅ Creado: apple-icon-60x60.png
+  ✅ Creado: apple-icon-72x72.png
+  ✅ Creado: apple-icon-76x76.png
+  ✅ Creado: apple-icon-114x114.png
+  ✅ Creado: apple-icon-120x120.png
+  ✅ Creado: apple-icon-144x144.png
+  ✅ Creado: apple-icon-152x152.png
+  ✅ Creado: apple-icon-180x180.png
+  ✅ Creado: ms-icon-144x144.png
+  ✅ Creado: android-icon-192x192.png
+  ✅ Creado: android-icon-512x512.png
+  ✅ Creado: site.webmanifest
+
+✅ Todos los archivos de iconos generados en: C:\Proyectos\BrandFunnel\assets\icon
+⚠️  IMPORTANTE: Los .png son placeholders de texto.
+   Reemplazar con imágenes reales antes de producción.
+PS C:\Proyectos\BrandFunnel>

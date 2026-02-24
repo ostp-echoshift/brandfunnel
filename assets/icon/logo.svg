@@ -1,0 +1,39 @@
+<svg width="220" height="60" viewBox="0 0 220 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad_brand_top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#A000FF" />
+    </linearGradient>
+    
+    <linearGradient id="grad_brand_bottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A000FF" />
+      <stop offset="100%" stop-color="#7B2EDA" />
+    </linearGradient>
+
+    <linearGradient id="grad_star_glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#A000FF" stop-opacity="0.4"/>
+    </linearGradient>
+
+  </defs>
+
+  <g transform="translate(12, 10)">
+    <path d="M2 2H38L24 24V30L16 30V24L2 2Z" fill="url(#grad_brand_top)" fill-opacity="0.9"/>
+    
+    <path d="M16 30H24L22 36H18L16 30Z" fill="url(#grad_brand_bottom)" fill-opacity="0.9"/>
+
+    <path d="M4 4H36L34 7H6L4 4Z" fill="white" fill-opacity="0.3"/>
+
+    <path d="M34 2L35.5 6L39.5 7.5L35.5 9L34 13L32.5 9L28.5 7.5L32.5 6L34 2Z" fill="white" />
+
+    <g transform="translate(20, 42) scale(1.2)">
+      <path d="M0 -7 L2 -2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2 -2 L0 -7Z" fill="url(#grad_star_glow)" />
+      <circle cx="0" cy="0" r="1.5" fill="white" />
+    </g>
+  </g>
+  
+  <text x="65" y="38" font-family="Arial, sans-serif" font-weight="900" font-size="26" letter-spacing="-1">
+    <tspan fill="#FFFFFF">Brand</tspan>
+    <tspan fill="#00F0FF">Funnel</tspan>
+  </text>
+</svg>

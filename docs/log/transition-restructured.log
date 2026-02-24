@@ -1,0 +1,77 @@
+PS C:\Proyectos\BrandFunnel> dir
+
+    Directory: C:\Proyectos\BrandFunnel
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----      22/feb/2026 01:36 a. m.                assets
+d----      22/feb/2026 01:36 a. m.                components
+d----      24/feb/2026 10:01 a. m.                data
+d----      22/feb/2026 01:38 a. m.                docs
+d----      22/feb/2026 01:35 a. m.                FUNNEL
+d----      22/feb/2026 01:36 a. m.                services
+-a---      24/feb/2026 09:56 a. m.            636 .gitignore
+-a---      24/feb/2026 10:15 a. m.           2197 404.html
+-a---      24/feb/2026 09:53 a. m.           9664 captura.html
+-a---      24/feb/2026 10:15 a. m.           4924 config.json
+-a---      24/feb/2026 10:14 a. m.           9323 fix-imagenes.ps1
+-a---      24/feb/2026 09:58 a. m.           3775 generar-favicons.ps1
+-a---      24/feb/2026 10:14 a. m.           1984 Generate-Icons.ps1
+-a---      24/feb/2026 10:15 a. m.           2399 gracias.html
+-a---      24/feb/2026 10:25 a. m.          17800 index.html
+-a---      24/feb/2026 09:57 a. m.            619 package.json
+-a---      24/feb/2026 10:15 a. m.           2896 project-config.json
+-a---      24/feb/2026 09:57 a. m.           3719 README.md
+-a---      24/feb/2026 10:33 a. m.          10009 reestructurar.ps1
+-a---      24/feb/2026 10:27 a. m.          21400 servicios.html
+
+PS C:\Proyectos\BrandFunnel> .\reestructurar.ps1
+╔════════════════════════════════════════════════════════════╗
+║     REESTRUCTURANDO ARCHIVOS BASADO EN INDEX Y SERVICIOS ║
+╚════════════════════════════════════════════════════════════╝
+
+[PASO 1] Extrayendo configuración de index.html...
+[PASO 2] Verificando main.css...
+[PASO 3] Actualizando config.json...
+  ✅ config.json actualizado
+[PASO 4] Actualizando project-config.json...
+  ✅ project-config.json actualizado
+[PASO 5] Actualizando data/servicios.json...
+  ✅ servicios.json actualizado
+[PASO 6] Actualizando captura.html...
+  ✅ captura.html actualizado
+[PASO 7] Actualizando gracias.html...
+  ✅ gracias.html actualizado
+[PASO 8] Actualizando 404.html...
+  ✅ 404.html actualizado
+[PASO 9] Verificando archivos base...
+  ✅ index.html usa hero-section.png
+  ✅ index.html usa confianza.png
+  ✅ index.html usa testimonios.png
+  ✅ index.html usa background-abstracto.png
+  ✅ servicios.html usa branding.png
+  ✅ servicios.html usa embudos-venta.png
+  ✅ servicios.html usa automatizacion.png
+
+╔════════════════════════════════════════════════════════════╗
+║              REESTRUCTURACIÓN COMPLETADA                  ║
+╠════════════════════════════════════════════════════════════╣
+║  📄 Archivos base: index.html, servicios.html (intocables)║
+║  ✅ config.json actualizado                                ║
+║  ✅ project-config.json actualizado                       ║
+║  ✅ servicios.json actualizado                            ║
+║  ✅ captura.html actualizado                              ║
+║  ✅ gracias.html actualizado                              ║
+║  ✅ 404.html actualizado                                  ║
+╚════════════════════════════════════════════════════════════╝
+
+📌 IMÁGENES CORRECTAS:
+   • hero-section.png
+   • confianza.png
+   • testimonios.png
+   • background-abstracto.png
+   • branding.png
+   • embudos-venta.png
+   • automatizacion.png
+   • isotipo.png
+PS C:\Proyectos\BrandFunnel>

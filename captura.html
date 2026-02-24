@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico · BrandFunnel</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icon/favicon-96x96.png">
+    <link rel="apple-touch-icon" href="assets/icon/favicon.png">
+    <!-- <link rel="manifest" href="assets/icon/site.webmanifest"> -->
+    <meta name="msapplication-TileImage" content="assets/icon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#00f0ff">
+    <meta name="theme-color" content="#00f0ff">
+</head>
+<body class="captura-body">
+    <div class="captura-container">
+        <div class="captura-header">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Volver</a>
+            <h1>Diagnóstico <span class="gradient-text">gratuito</span></h1>
+            <p>Cuéntanos tu proyecto y te enviaremos una propuesta personalizada</p>
+        </div>
+        
+        <form id="formCaptura" class="captura-form">
+            <input type="hidden" name="servicio" id="servicioInput" value="">
+            
+            <div class="form-group">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+                <div class="error-message" id="error-nombre"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                <div class="error-message" id="error-email"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono">Teléfono (WhatsApp) *</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="33 1234 5678">
+                <div class="error-message" id="error-telefono"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="empresa">Nombre de tu empresa / marca</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Ej: Mi Negocio">
+            </div>
+            
+            <div class="form-group">
+                <label for="servicio_select">Servicio de interés *</label>
+                <select id="servicio_select" name="servicio_select" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="branding">Branding Estratégico</option>
+                    <option value="embudos">Embudos de Venta</option>
+                    <option value="automatizacion">Automatización Inteligente</option>
+                    <option value="completo">Paquete Completo</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="presupuesto">Presupuesto estimado</label>
+                <select id="presupuesto" name="presupuesto">
+                    <option value="">Selecciona una opción</option>
+                    <option value="menos-10k">Menos de $10,000 MXN</option>
+                    <option value="10k-30k">$10,000 - $30,000 MXN</option>
+                    <option value="30k-50k">$30,000 - $50,000 MXN</option>
+                    <option value="50k-100k">$50,000 - $100,000 MXN</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="mensaje">Cuéntanos más sobre tu proyecto</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Qué necesitas? ¿Cuándo te gustaría empezar?"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="tyc" name="tyc" required>
+                    <span>Acepto los <a href="#" style="color: var(--primary);">términos y condiciones</a></span>
+                </label>
+            </div>
+            
+            <button type="submit" id="btnEnviar" class="btn-submit">
+                <span>Enviar diagnóstico</span>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+    <script src="assets/js/utils.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('formCaptura');
+            
+            // Servicio desde URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const servicioFromUrl = urlParams.get('servicio');
+            if (servicioFromUrl) {
+                document.getElementById('servicio_select').value = servicioFromUrl;
+                document.getElementById('servicioInput').value = servicioFromUrl;
+            }
+            
+            // Validaciones
+            const nombre = document.getElementById('nombre');
+            const email = document.getElementById('email');
+            const telefono = document.getElementById('telefono');
+            
+            function validarNombre() {
+                const error = document.getElementById('error-nombre');
+                if (nombre.value.trim().length < 3) {
+                    nombre.classList.add('error');
+                    error.textContent = 'Mínimo 3 caracteres';
+                    return false;
+                }
+                nombre.classList.remove('error');
+                error.textContent = '';
+                return true;
+            }
+            
+            function validarEmail() {
+                const error = document.getElementById('error-email');
+                const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!regex.test(email.value.trim())) {
+                    email.classList.add('error');
+                    error.textContent = 'Email inválido';
+                    return false;
+                }
+                email.classList.remove('error');
+                error.textContent = '';
+                return true;
+            }
+            
+            function validarTelefono() {
+                const error = document.getElementById('error-telefono');
+                const digits = telefono.value.replace(/\D/g, '');
+                if (digits.length !== 10) {
+                    telefono.classList.add('error');
+                    error.textContent = 'Debe tener 10 dígitos';
+                    return false;
+                }
+                telefono.classList.remove('error');
+                error.textContent = '';
+                return true;
+            }
+            
+            nombre.addEventListener('input', validarNombre);
+            email.addEventListener('input', validarEmail);
+            telefono.addEventListener('input', validarTelefono);
+            
+            telefono.addEventListener('keyup', function(e) {
+                let val = this.value.replace(/\D/g, '');
+                if (val.length > 10) val = val.slice(0,10);
+                if (val.length > 6) {
+                    this.value = val.slice(0,3) + ' ' + val.slice(3,6) + ' ' + val.slice(6);
+                } else if (val.length > 3) {
+                    this.value = val.slice(0,3) + ' ' + val.slice(3);
+                } else {
+                    this.value = val;
+                }
+            });
+            
+            // Envío
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (!validarNombre() || !validarEmail() || !validarTelefono()) return;
+                
+                const btn = document.getElementById('btnEnviar');
+                btn.disabled = true;
+                btn.innerHTML = '<span class="loading-spinner"></span> Enviando...';
+                
+                const data = {
+                    nombre: nombre.value.trim(),
+                    email: email.value.trim(),
+                    telefono: telefono.value.replace(/\D/g, ''),
+                    empresa: document.getElementById('empresa').value.trim(),
+                    servicio: document.getElementById('servicio_select').value,
+                    presupuesto: document.getElementById('presupuesto').value,
+                    mensaje: document.getElementById('mensaje').value.trim(),
+                    fecha: new Date().toLocaleString('es-MX')
+                };
+                
+                const mensajeWA = `🟢 *NUEVO LEAD - BRANDFUNNEL*
+                👤 ${data.nombre}
+                📧 ${data.email}
+                📱 ${data.telefono}
+                📋 ${data.servicio}
+                💰 ${data.presupuesto || 'No especificado'}
+                📝 ${data.mensaje || 'Sin mensaje'}`;
+                                
+                window.open(`https://wa.me/523317575573?text=${encodeURIComponent(mensajeWA)}`, '_blank');
+                
+                setTimeout(() => {
+                    window.location.href = 'gracias.html';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
+
